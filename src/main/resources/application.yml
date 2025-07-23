@@ -1,1 +1,11 @@
-spring.application.name=integration_prestodb
+server:
+  port: 9398
+
+spring:
+  application:
+    name: integration_prestodb
+
+  datasource:
+    url: jdbc:presto://localhost:9080
+    username: na
+    driver-class-name: io.prestosql.jdbc.PrestoDriver
